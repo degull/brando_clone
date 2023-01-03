@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 ul {list-style:none;}
 a {text-decoration: none;}
-
+*{
+   margin: 0;
+   padding: 0;
+}
 
 #skip {
    z-index: 2;
@@ -40,8 +43,7 @@ a {text-decoration: none;}
       background: rgba(0,0,0,0);
       border-bottom: 1px solid rgba(255,255,255,0.15);
       .container {
-         background: red;
-         width: 1170px;
+         width: 1200px;
          height: 100%;
          margin: 0 auto;
          .gap {
@@ -95,33 +97,311 @@ a {text-decoration: none;}
       }
    }
    #main {
+      width: 100%;
+      z-index: 1;
+      position: relative;
       #section1 {
-         h2 {}
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 100%;
+         height: 100vh;
+         background: url(../img/photography-img1.jpg) no-repeat 50% 50% fixed;
+         background-size: cover;
+         h2 {
+            font-size: 200px;
+            font-weight: 600;
+            color: #00ff9780;
+         }
       }
       #section2{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         height: 100vh;
+         background: url(../img/photography-img2.jpg) no-repeat 50% 50% fixed;
+         background-size: cover;
          h2 {
-
+            font-size: 200px;
+            font-weight: 600;
+            color: #00ff9780;
          }
       }
       #section3 {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         height: 100vh;
+         background: url(../img/photography-img3.jpg)no-repeat 50% 50% fixed;
+         background-size: cover;
          h2 {
-
+            font-size: 200px;
+            font-weight: 600;
+            color: #00efff80;
          }
       }
       #section4 {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 100%;
+         height: 100vh;
+         background: url(../img/photography-img4.jpg) no-repeat 50% 50% fixed;
+         background-size: cover;
          h2 {
+            font-size: 200px;
+            font-weight: 600;
+            color: #00ff9780;
+         }
+      }
+      #section5{
+         display: flex;
+         width: 100%;
+         height: 110vh;
+         background: url(../img/section5.jpg) no-repeat 50% 50% fixed;
+         background-size: cover;
+         align-items:flex-start;
+         justify-content: center;
+         h2 {
+            font-size: 100px;
+            color: #00ff9780;
+            font-weight: 600;
+         }
+      }
+      #section6{
+         width: 100%;
+         height: 110vh;
+         display: flex;
+         justify-content:flex-end;
+         background: url(../img/photography-img6.jpg) no-repeat 50% 50% fixed;
+         background-size: cover;
+         h2 {
+            font-size: 100px;
+            font-size: 600;
+            color: #00ff9780;;
+         }
+      }
+      #section7{
+         width: 100%;
+         height: 100vh;
+         background: #c99;
+      }
+      #section8{
+         width: 100%;
+         height: 100vh;
+         background: #9c9;
+      }
+
+      /* SECTION 9 ==> before 사용 */
+      #section9 {
+         width: 100%;
+         height: 246.391px;
+         position: relative;
+         &::before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            background: url(../img/photography-img35.jpg.webp) no-repeat 50% 50%;
+            background-size: cover;
+            z-index: 1;  //이미지는 아래로 깔림
+            transition: all 0.3s;
+            filter: brightness(50%);
+         }
+         h2 {
+            font-size: 100px;
+            position: absolute;
+            z-index: 2; //글자가 위로 올라옴
+            color: rgba(255,255,255,1);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         &:hover::before {
+            background-position: 50% 20%;
+            filter: brightness(90%);
+         }
+      }
+
+      /* SECTION10 => after사용 */
+      #section10 {
+         width: 100%;
+         height: 246.391px;
+         position: relative;
+         &::after {
+            content: '';
+            display: block;
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url(../img/photography-img36.jpg.webp) no-repeat 50% 50%;
+            background-size: cover;
+            transition: all 0.3s;
+            filter: brightness(50%);
+         }
+         h2 {
+            font-size: 100px;
+            position: absolute;
+            z-index: 2;
+            color: rgba(255,255,255,1);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         &:hover::after{
+            background-position: 50% 20%;
+            filter: brightness(90%);
+         }
+      }
+      /* SECTION11 */
+      #section11 {
+         width: 100%;
+         height: 246.391px;
+         position: relative;
+         &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background: url(../img/photography-img37.jpg.webp) no-repeat 50% 50%;
+            background-size: cover;
+            transition: all 0.3s;
+            filter: brightness(50%);
+         }
+         h2{
+            position: absolute;
+            font-size: 100px;
+            z-index: 2;
+            color: rgba(255,255,255,1);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         &:hover::before{
+            background-position: 50% 20%;
+            filter: brightness(90%);
+         }
+      }
+      #section12 {
+         width: 100%;
+         height: 246.391px;
+         position: relative;
+         &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background: url(../img/photography-img38.jpg.webp) no-repeat 50% 50%;
+            background-repeat: cover;
+            transition: all 0.3s;
+            filter: brightness(50%);
+         }
+         h2 {
+            position: absolute;
+            font-size: 100px;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            color: rgba(255,255,255,1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         &:hover::before{
+            filter: brightness(90%);
+            background-position: 50% 20%;
+         }
+      }
+
+      #section13 {
+         width: 100%;
+         height: 246.391px;
+         position: relative;
+         &::after {
+            width: 100%;
+            height: 100%;
+            content: '';
+            top: 0;
+            left: 0;
+            display: block;
+            z-index: 1;
+            background: url(../img/photography-img39.jpg.webp) no-repeat 50% 50%;
+            background-size: cover;
+            transition: all 0.3s;
+            filter: brightness(50%);
+         }
+         h2 {
+            font-size: 100px;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            position: absolute;
+            color: rgba(255,255,255,1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         &:hover::after{
+            background-position: 50% 20%;
+            filter: brightness(90%);
 
          }
       }
-      #section5{}
-      #section6{}
-      #section7{}
-      #section8{}
 
-      .section9_13 {
+      #section14{
+         margin: 0 auto;
+         width: 100%;
+         height: 50vh;
+         display: flex;
+         align-items: center;
+         justify-content: center;
          
+         img {
+            
+            margin: 10px 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         p {
+            font-size: 13px;
+            font-family: Montserrat;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 5px;
+         }
       }
-      
+
+      #section15{
+         width: 100%;
+         height: 70vh;
+         background: blue;
+      }
+
+
+   
       
    }
 
