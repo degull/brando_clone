@@ -508,7 +508,24 @@ a {text-decoration: none;}
                   height: 27px;
                   margin: 50px 15px;
                }
-            }  
+            } 
+            .copy {
+               display: flex;
+               align-items:flex-end;
+               justify-content:flex-end;
+               //position: relative;
+               position: absolute;
+               span {
+                  font-size: 12px;
+                  font-family: Montserrat;
+                  a {
+                     font-size: 12px;
+                     font-family: Montserrat;
+                     text-decoration: none;
+                  }
+               }
+            }
+            
          }
        
          

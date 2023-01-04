@@ -506,6 +506,21 @@ a {
   height: 27px;
   margin: 50px 15px;
 }
+#wrap #main #section16 .icon .copy {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+}
+#wrap #main #section16 .icon .copy span {
+  font-size: 12px;
+  font-family: Montserrat;
+}
+#wrap #main #section16 .icon .copy span a {
+  font-size: 12px;
+  font-family: Montserrat;
+  text-decoration: none;
+}
 #wrap #main #section16::before {
   content: "";
   top: 0;
