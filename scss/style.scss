@@ -34,6 +34,7 @@ a {text-decoration: none;}
    position: relative;
    width: 100%;
    #header {
+      position: fixed;
       width: 100%;
       height: 76px;
       z-index: 3;
@@ -42,6 +43,7 @@ a {text-decoration: none;}
       position: fixed;
       background: rgba(0,0,0,0);
       border-bottom: 1px solid rgba(255,255,255,0.15);
+      
       .container {
          width: 1200px;
          height: 100%;
@@ -396,9 +398,135 @@ a {text-decoration: none;}
 
       #section15{
          width: 100%;
-         height: 70vh;
-         background: blue;
+         height: 280px;
+         position: relative;
+         .type1 {
+            display: flex;
+            position: relative;
+            width: 420.5px;
+            height: 30px;
+            .input1 {
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               padding: 12px 15px;
+               margin: 0 250px;
+               background: #fff;
+               border: 2px solid rgba(0,0,0,.1);
+               &:hover {
+                  border: 2px solid #000;
+               }
+               
+            }
+         }
+         .type2 {
+            display: block;
+            width: 420.5px;
+            height: 30px;
+            position: relative;
+            .input2 {
+               width: 100%;
+               height: 100%;
+               padding: 12px 15px;
+               margin: 50px 250px;
+               background: #fff;
+               border: 2px solid rgba(0,0,0,.1);
+               position: absolute;
+               transition: all 0.2s;
+               &:hover{
+                  border: 2px solid #000;
+               }
+            }
+         }
+         .type3 {
+            display: block;
+            position: relative;
+            width: 420.5px;
+            height: 118px;
+            .input3 {
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               padding: 12px ;
+               margin: -60px 750px;
+               text-align:start;
+               background: #fff;
+               border: 2px solid rgba(0,0,0,.1);
+               transition: all 0.2s;
+               color: rgba(0,0,0,.1);
+               &:hover{
+                  border: 2px solid #000;
+               }
+            }
+         }
+         p {
+            font-size: 12px;
+            font-weight: 500;
+            display: block;
+            font-family: Montserrat;
+            letter-spacing: 1px;
+            margin: 20px 250px;
+            
+
+         }
+         .send-btn {
+            //position: relative;
+            display: block;
+            width: 145.57px;
+            height: 50.56px;
+            background: #000;
+            color: #fff;
+            border: 4px solid #000;
+            transition: all 0.3s;
+            font-family: Montserrat;
+            font-weight: 600;
+            margin: -70px 750px;
+            cursor: pointer;
+            &:hover{
+               background: #fff;
+               color: #000;
+            }
+         }  
       }
+
+      #section16 {
+         width: 1519px;
+         height: 236px;
+         position: relative;
+         margin: 0 auto;
+         .icon {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+            position: relative;
+            a {
+               height: 100%;
+               i {   
+                  width: 27px;
+                  height: 27px;
+                  margin: 50px 15px;
+               }
+            }  
+         }
+       
+         
+
+         &::before {
+            content: '';
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: url(../img/footer.jpg) no-repeat 50% 50%;
+            background-size: cover;
+            border-top: 1px solid rgba(0,0,0,.1);
+         }
+      }
+
 
 
    
@@ -406,5 +534,7 @@ a {text-decoration: none;}
    }
 
 
-   #footer {}
+   #footer {
+      
+   }
 }
